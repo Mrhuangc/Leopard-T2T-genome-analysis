@@ -1,0 +1,16 @@
+# For candidate windows only; the input PAF, FAI, and RepeatMasker must all come from the same version of ChrY.
+reference:
+  chr_y: ChrY
+annotations:
+  repeatmasker_out: FCA.ChrY.RepeatMasker.out
+  putative_centromere_bed: ''
+parameters:
+  repeat_window: 50000
+  class_window: 5000
+  ampliconic_min_identity: 0.99
+  ampliconic_min_coverage: 0.50
+  repeat_rich_fraction: 0.80
+  satellite_rich_fraction: 0.80
+  x_transposed_min_identity: 0.90
+  x_transposed_min_block: 1000000
+  x_transposed_merge_gap: 15000

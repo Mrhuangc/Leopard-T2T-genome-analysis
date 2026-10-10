@@ -1,0 +1,36 @@
+# Minimal example. For a real run, copy params.template.yml and use absolute paths.
+taxon_genus: Panthera
+taxon_species: pardus
+taxon_subspecies: ""
+species: Ppa
+assembly_id: Ppa_T2T
+
+genome: /ABSOLUTE/PATH/Ppa.genome.fa
+initial_search_mode: reuse
+input_merged: /ABSOLUTE/PATH/Ppa.initial_merged.tblastn.tsv
+or_db: /ABSOLUTE/PATH/Database_Vertebrate_OR_cdhit_80.prot
+gpcr_db: /ABSOLUTE/PATH/GPCR_plus_Chemoreceptors_vertebrates.prot
+template_alignment: /ABSOLUTE/PATH/Template_alignment
+known_type1_ids: /ABSOLUTE/PATH/Known_OR_genes_TYPEI.id
+known_type2_ids: /ABSOLUTE/PATH/Known_OR_genes_TYPEII.id
+or_clade_db: /ABSOLUTE/PATH/Database_Vertebrate_OR.prot
+interproscan_dir: /ABSOLUTE/PATH/interproscan-5.78-109.0
+outdir: results/Ppa
+publish_mode: link
+conda_cache_dir: /ABSOLUTE/PATH/felidae_or_shared_conda
+
+slurm_partition: debug
+slurm_account: REPLACE_ME
+slurm_qos: REPLACE_ME
+max_cpus: 16
+max_memory_gb: 128
+max_time_h: 24
+initial_query_shards: 2
+initial_tblastn_evalue: 1e-5
+initial_tblastn_cpus: 8
+initial_tblastn_max_forks: 2
+initial_tblastn_timeout_hours: 24
+
+# Limit expensive tasks so one species does not monopolize the account.
+exonerate_max_forks: 3
+strict_refinement_max_forks: 2

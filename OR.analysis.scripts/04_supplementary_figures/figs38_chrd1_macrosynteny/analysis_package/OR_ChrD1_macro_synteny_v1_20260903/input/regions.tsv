@@ -1,0 +1,8 @@
+analysis_unit	scientific_name	genome_fasta	contig	start_1	end_1	left_cluster_id	right_cluster_id
+Fca	Felis catus	/ABSOLUTE/PATH/genomes/Fca.genome.fa	ChrD1	69116584	114826713	Fca_ORCL000023	Fca_ORCL000024
+Lge	Leopardus geoffroyi	/ABSOLUTE/PATH/genomes/Lge.genome.fa	ChrD1	59200822	105324850	Lge_ORCL000013	Lge_ORCL000014
+Pbe	Prionailurus bengalensis	/ABSOLUTE/PATH/genomes/Pbe.genome.fa	ChrD1	59337936	105668374	Pbe_ORCL000012	Pbe_ORCL000013
+Ple	Panthera leo	/ABSOLUTE/PATH/genomes/Ple.genome.fa	ChrD1	58976491	105074081	Ple_ORCL000022	Ple_ORCL000023
+Ppa	Panthera pardus	/ABSOLUTE/PATH/genomes/Ppa_T2T.genome.fa	ChrD1	10431791	56287838	Ppa_ORCL000020	Ppa_ORCL000021
+Ppa_or	Panthera pardus orientalis	/ABSOLUTE/PATH/genomes/Ppa_or.genome.fa	HiC_scaffold_11	58834392	104688832	Ppa_or_ORCL000024	Ppa_or_ORCL000025
+Pti	Panthera tigris	/ABSOLUTE/PATH/genomes/Pti.genome.fa	ChrD1	59469000	105478520	Pti_ORCL000023	Pti_ORCL000024

@@ -1,0 +1,8 @@
+name: felidae-or-iqtree
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - iqtree=2.3.6
+

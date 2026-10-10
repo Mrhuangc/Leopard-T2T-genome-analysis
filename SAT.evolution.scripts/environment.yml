@@ -1,0 +1,16 @@
+name: sat_variant_origin
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pandas>=2.1
+  - numpy>=1.26
+  - scipy>=1.11
+  - scikit-learn>=1.4
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - mafft>=7.520
+  - vsearch>=2.28
+  - iqtree>=2.3
+  - samtools>=1.20

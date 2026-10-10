@@ -1,0 +1,9 @@
+name: felidae-or-mafft-add
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  # 7.526 was unavailable on the target cluster channels; 7.525 is the
+  # solver-tested release used for both --add --keeplength stages.
+  - mafft=7.525

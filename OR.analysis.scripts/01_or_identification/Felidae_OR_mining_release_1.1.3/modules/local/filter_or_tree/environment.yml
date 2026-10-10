@@ -1,0 +1,8 @@
+name: felidae-or-filter-tree
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - biopython=1.85
+

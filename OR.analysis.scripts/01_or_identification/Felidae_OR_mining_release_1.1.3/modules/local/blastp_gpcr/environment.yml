@@ -1,0 +1,8 @@
+name: felidae-or-blastp-gpcr
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - blast=2.16.0
+

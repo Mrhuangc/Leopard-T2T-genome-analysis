@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+OR_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/../.." && pwd -P)"
+DATA_ROOT="${OR_DATA_ROOT:-/ABSOLUTE/PATH/OR_data}"
+RESULT_ROOT="${OR_RESULT_ROOT:-$OR_ROOT/results}"
+QUERY_FASTA="$DATA_ROOT/joint/functional_OR_unique_proteins.prot.fa"
+BROAD_CLADE_TSV="$DATA_ROOT/joint/final_joint_OR_representative_assignments.tsv"
+REFERENCE_DIR="$DATA_ROOT/reference"
+REFERENCE_FASTA="$REFERENCE_DIR/human_OR_reference.prot.fa"
+REFERENCE_METADATA="$REFERENCE_DIR/human_OR_reference.metadata.tsv"
+OUTPUT_ROOT="$RESULT_ROOT/subfamily_candidates"

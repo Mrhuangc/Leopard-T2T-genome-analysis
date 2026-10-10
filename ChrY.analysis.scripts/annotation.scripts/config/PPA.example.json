@@ -1,0 +1,15 @@
+{
+  "species": "PPA",
+  "expected_length": 44117358,
+  "genome": "../inputs/PPA.ChrY.fa",
+  "evm_gff": "../inputs/PPA.ChrY.EVM.gff3",
+  "evidence_manifest": "PPA.evidence_manifest.tsv",
+  "regions": "../../results/04_comparative/PPA.ChrY.structural_partition.revised.bed",
+  "protein_references": {
+    "PLE": "../inputs/PLE.ChrY.annotation.pep.fa",
+    "PON": "../inputs/PON.ChrY.annotation.pep.fa",
+    "NEE": "../inputs/NEE.ChrY.annotation.pep.fa"
+  },
+  "target_homology_source": "GeMoMa_gp",
+  "outdir": "../results/PPA"
+}

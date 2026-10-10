@@ -1,0 +1,7 @@
+name: felidae-or-fasttree-clades
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - fasttree=2.1.11

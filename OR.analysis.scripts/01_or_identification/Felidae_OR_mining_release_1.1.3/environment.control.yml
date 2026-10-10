@@ -1,0 +1,20 @@
+name: felidae-or-control
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.11
+  - openjdk=17
+  - nextflow>=24.10
+  - nf-test
+  # Install Python runtime/test dependencies as Conda binaries. This avoids
+  # pip attempting a NumPy source build on CentOS 7 / GCC 4.8.5.
+  - biopython=1.85
+  - pyyaml>=6,<7
+  - typer>=0.12,<1
+  - pytest>=8,<9
+  - ruff>=0.9,<1
+  - pip
+  - setuptools
+  - wheel

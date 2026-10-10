@@ -1,0 +1,16 @@
+{
+  "species": "FCA",
+  "expected_length": 45999067,
+  "genome": "../inputs/FCA.ChrY.fa",
+  "evm_gff": "../inputs/FCA.ChrY.gff3",
+  "evidence_manifest": "FCA.evidence_manifest.tsv",
+  "regions": "../../results/04_comparative/FCA.ChrY.structural_partition.revised.bed",
+  "protein_references": {
+    "PLE": "../inputs/PLE.ChrY.annotation.pep.fa",
+    "PON": "../inputs/PON.ChrY.annotation.pep.fa",
+    "NEE": "../inputs/NEE.ChrY.annotation.pep.fa",
+    "AME": "../inputs/AME.chrY.annotation.pep.fa"
+  },
+  "target_homology_source": "GeMoMa_gp",
+  "outdir": "../results/FCA"
+}

@@ -1,0 +1,101 @@
+# Copy to params.<species_code>.yml and replace every /ABSOLUTE/PATH placeholder.
+# Naming: Panthera pardus -> Ppa; Ppa and Ppa_or are separate assembly units.
+taxon_genus: Panthera
+taxon_species: pardus
+taxon_subspecies: ""
+species: Ppa
+assembly_id: reference_assembly_name_and_version
+
+genome: /ABSOLUTE/PATH/Ppa.genome.fa
+# New genome: generate. Existing validated 16-column table: reuse.
+initial_search_mode: generate
+input_merged:
+or_db: /ABSOLUTE/PATH/Database_Vertebrate_OR_cdhit_80.prot
+gpcr_db: /ABSOLUTE/PATH/GPCR_plus_Chemoreceptors_vertebrates.prot
+template_alignment: /ABSOLUTE/PATH/Template_alignment
+known_type1_ids: /ABSOLUTE/PATH/Known_OR_genes_TYPEI.id
+known_type2_ids: /ABSOLUTE/PATH/Known_OR_genes_TYPEII.id
+or_clade_db: /ABSOLUTE/PATH/Database_Vertebrate_OR.prot
+interproscan_dir: /ABSOLUTE/PATH/interproscan-5.78-109.0
+outdir: results/Ppa
+
+# Fast shared-filesystem mode: hard-link published files instead of copying them.
+# Change to copy only when the project work/ and outdir are on different filesystems.
+publish_mode: link
+# Strongly recommended on HPC: one read-write cache shared by every species/release.
+# The launcher prepares it on the login node before any offline Slurm job starts.
+conda_cache_dir: /ABSOLUTE/PATH/felidae_or_shared_conda
+max_cpus: 16
+max_memory_gb: 128
+max_time_h: 24
+slurm_partition: debug
+slurm_account: REPLACE_ME
+slurm_qos: REPLACE_ME
+
+# Initial reference-OR versus genome TBLASTN. Keep identical across species.
+# Two 8-CPU shards give at most six search jobs for three concurrent species.
+initial_query_shards: 2
+initial_tblastn_evalue: 1e-5
+initial_tblastn_cpus: 8
+initial_tblastn_max_forks: 2
+initial_tblastn_timeout_hours: 24
+
+# NC-compatible discovery defaults. Change only with a written biological reason.
+candidate_min_width: 100
+candidate_flank: 1000
+min_orf_nt: 750
+gpcr_blast_evalue: 1e-5
+iqtree_model: JTT+F+I+G4
+iqtree_iterations: 200
+iqtree_seed: 20260806
+species_or_cluster_threshold: 500
+species_or_cluster_identity: 0.90
+species_tblastn_evalue: 1e-20
+max_hits_per_species_query: 10000
+maximum_intron_length: 10000
+confirmed_or_clearance: 50
+
+# Bounded targeted Exonerate search validated on Ppa.
+exonerate_exhaustive: false
+exonerate_suboptimal: false
+exonerate_min_intron: 50
+exonerate_top_queries_per_region: 3
+exonerate_pilot_pairs: 6
+exonerate_pilot_min_positive_pairs: 3
+exonerate_soft_timeout_minutes: 5
+exonerate_smoke_timeout_minutes: 10
+exonerate_smoke_exhaustive: false
+exonerate_max_forks: 3
+maximum_or_exons: 2
+exonerate_refinement_flank: 600
+exonerate_model_blast_clearance: 50
+exonerate_min_reduced_blast_segment: 50
+strict_refinement_pilot_pairs: 2
+strict_refinement_timeout_minutes: 5
+strict_refinement_max_forks: 2
+multiexon_min_model_overlap: 0.80
+multiexon_edge_distance: 100
+multiexon_edge_n_window: 200
+multiexon_edge_n_run: 50
+
+interproscan_version: 5.78-109.0
+interproscan_applications: PrositeProfiles
+interproscan_smoke_records: 5
+interproscan_smoke_disable_precalc: true
+interproscan_smoke_cpus: 4
+interproscan_expected_ipr: IPR017452
+interproscan_candidate_disable_precalc: true
+interproscan_candidate_cpus: 8
+interproscan_candidate_timeout_hours: 6
+
+single_exon_catalog_clearance: 100
+single_exon_recovery_flank: 100
+single_exon_targeted_evalue: 1e-20
+single_exon_pilot_candidates: 5
+single_exon_pair_timeout_seconds: 120
+single_exon_search_cpus: 8
+single_exon_search_timeout_hours: 4
+
+clade_blast_evalue: 1e-5
+clade_minimum_tree_support: 0.80
+or_operational_cluster_gap_bp: 1000000

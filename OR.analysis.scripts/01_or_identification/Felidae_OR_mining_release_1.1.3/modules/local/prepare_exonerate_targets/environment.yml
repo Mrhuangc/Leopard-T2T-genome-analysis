@@ -1,0 +1,6 @@
+name: felidae-or-prepare-exonerate-targets
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11

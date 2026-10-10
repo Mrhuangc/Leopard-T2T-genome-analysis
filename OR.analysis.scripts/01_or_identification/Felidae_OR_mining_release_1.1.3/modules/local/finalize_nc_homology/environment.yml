@@ -1,0 +1,6 @@
+name: felidae-or-finalize-nc-homology
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11

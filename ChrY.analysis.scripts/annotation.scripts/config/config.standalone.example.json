@@ -1,0 +1,27 @@
+{
+  "project_name": "PPA_FCA_ChrY_pseudogene_annotation",
+  "species": {
+    "FCA": {
+      "chry_fasta": "../inputs/FCA.ChrY.fa",
+      "partition_bed": "../../results/04_comparative/FCA.ChrY.structural_partition.revised.bed",
+      "chry_high_confidence_gff": "../results/FCA/FCA.ChrY.protein_coding.high_confidence.gff3",
+      "chry_provisional_gff": "../results/FCA/FCA.ChrY.protein_coding.provisional.gff3",
+      "genome_gff": "../inputs/FCA.final.sort.rename.0828.gff3",
+      "genome_cds_fasta": "../inputs/FCA.annotation.0828.cds.fa",
+      "genome_pep_fasta": "../inputs/FCA.annotation.0828.pep.fa",
+      "repeat_gff": "../inputs/FCA.repeat.ChrY.gff",
+      "reference_pseudogene_gff": null
+    },
+    "PPA": {
+      "chry_fasta": "../inputs/PPA.ChrY.fa",
+      "partition_bed": "../../results/04_comparative/PPA.ChrY.structural_partition.revised.bed",
+      "chry_high_confidence_gff": "../results/PPA/PPA.ChrY.protein_coding.high_confidence.gff3",
+      "chry_provisional_gff": "../results/PPA/PPA.ChrY.protein_coding.provisional.gff3",
+      "genome_gff": "../inputs/PPA.final.annotation.final.0629.gff3",
+      "genome_cds_fasta": "../inputs/PPA.annotation.0817.cds.fa",
+      "genome_pep_fasta": "../inputs/PPA.annotation.0817.pep.fa",
+      "repeat_gff": "../inputs/PPA.repeat.ChrY.gff",
+      "reference_pseudogene_gff": null
+    }
+  }
+}

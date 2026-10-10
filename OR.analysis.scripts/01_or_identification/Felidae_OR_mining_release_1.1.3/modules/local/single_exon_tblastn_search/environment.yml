@@ -1,0 +1,8 @@
+name: felidae-or-single-exon-tblastn
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.11
+  - blast=2.16.0

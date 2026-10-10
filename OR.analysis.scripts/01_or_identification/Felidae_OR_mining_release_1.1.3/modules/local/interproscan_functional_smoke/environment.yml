@@ -1,0 +1,10 @@
+name: felidae-or-interproscan-runtime
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - openjdk=11
+  - perl
+  - python=3.11
+  - bioconda::pftools=3.2.13

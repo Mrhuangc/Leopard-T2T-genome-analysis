@@ -1,0 +1,8 @@
+analysis_unit	scientific_name	assembly_accession	assembly_level	workflow_version	genome_fasta
+Fca	Felis catus	NA	T2T	1.1.2	Fca.genome.fa
+Lge	Leopardus geoffroyi	NA	Chr	1.1.3	Lge.genome.fa
+Pbe	Prionailurus bengalensis	NA	Chr	1.1.3	Pbe.genome.fa
+Ple	Panthera leo	NA	Chr	1.1.2	Ple.genome.fa
+Ppa_or	Panthera pardus orientalis	NA	Chr	1.1.3	Ppa_or.genome.fa
+Ppa	Panthera pardus	NA	T2T	1.1.3	Ppa.genome.fa
+Pti	Panthera tigris ssp.sumatrae	NA	Chr	1.1.3	Pti.genome.fa

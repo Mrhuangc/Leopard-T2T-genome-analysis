@@ -1,0 +1,6 @@
+name: felidae-or-build-complete-catalog
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11

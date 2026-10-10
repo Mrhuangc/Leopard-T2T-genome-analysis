@@ -1,0 +1,12 @@
+source	path
+ANNEVO	../inputs/FCA.ANNEVO.ChrY.gff3
+Tiberius	../inputs/FCA.Tiberius.ChrY.gff3
+Augustus	../inputs/FCA.augustus.ChrY.gff
+GeMoMa_bbear	../inputs/FCA.bbear.GeMoMa.gff
+GeMoMa_cat	../inputs/FCA.cat.GeMoMa.gff
+GeMoMa_cattle	../inputs/FCA.cattle.GeMoMa.gff
+GeMoMa_dog	../inputs/FCA.dog.GeMoMa.gff
+GeMoMa_gp	../inputs/FCA.gp.GeMoMa.gff
+GeMoMa_human	../inputs/FCA.human.GeMoMa.gff
+GeMoMa_pig	../inputs/FCA.pig.GeMoMa.gff
+GeMoMa_sheep	../inputs/FCA.sheep.GeMoMa.gff

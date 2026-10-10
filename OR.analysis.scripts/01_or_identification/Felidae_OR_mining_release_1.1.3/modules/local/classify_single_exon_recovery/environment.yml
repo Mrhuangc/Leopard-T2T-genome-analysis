@@ -1,0 +1,6 @@
+name: felidae-or-classify-single-exon-recovery
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
